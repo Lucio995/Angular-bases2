@@ -1,0 +1,72 @@
+# La carpeta angular: nunca vamos a tener q modificar nada es casi seguro, porq se generan de manera automatica,
+
+# Vscode: no es parte del proyecto de angular es algo q se genera automaticamente
+
+# node-modules: tambien son ignorados en el git igonore,
+
+# Diretorio src: va a ser en el q vamos a estar la mayor parte del tiempo , es donde vamos a crear el codigo de angular
+
+# editorconfing: Este archivo establece estas configuraciones por defecto en visual studio code para este proyecto, simplemente sigue ciertas recomendaciones para q el codigo luzca igual al de otras personas
+
+# Esta es una explicacion para entender mas o menos como funciona cada archivo pero son cosas q rara vez tenemos q tocar
+
+# Es un archivo de git para evitar de q cubnado hagamos un commit, le tomemos una foto al proyecto, lo subamos a github o lo q sea, los archivos y directorios q este en este gitignorea van a ser ignorados y no van a subirse al repositorio o al lugar de la nube
+
+# El angular.json sirve para darle ciertas configuraciones a nuesrtra aplicacion, no se usa frecuentmente
+
+# package-lock.json: lo usamos cuando hacemos comandos de instalacion, igual nunca modificamos el archivo directamente
+
+# package.json: es un archivo en el cual vamos a estar yendo a hacer algunas modificaciones, anque depende mucho del tipo de proyecto q este creando
+
+# readme: es un archivo dode explicamos como corre la aplicacion como funciona, si hay alguna configuracion especial
+
+# Los dos tsconfing siguientes: basicamente todos son configuraciones de typescript configuraciones de la aplicacion, no tenemos q modificar esto es muy raro cuando se debe modificarlos, como esta ya tiene las recomendaciones para angular para ayudarnos a trabajar de una manera estandarisada
+
+
+
+# l ultimo tsconfing: solo se enfoca en el testing
+
+
+
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+<h3>Listado de heroes</h3>
+
+<!-- Si esto no se cumple va a mostrar al elemento que tenga esa referncia -->
+<div *ngIf="heroeborrado; else nadafueborrado">
+  <h3>Heroe borrado <small class="text-danger">{{heroeborrado}}</small></h3>
+</div>
+
+<!-- ng-template: es como un div q no existe, los contenidos que tienen como que no existen hasta q son llamadaos por una condicion(buscar en chatgpt) -->
+<ng-template #nadafueborrado>
+  <h3 >No se ha borrado nada</h3>
+</ng-template>
+
+
+<button *ngIf="heroesNames.length > 0" (click)="borrarUlitmoHeroe()" class="btn btn-outline-danger">Borrar ultimo heroe</button>
+
+<ul class="mt-2 list-group">
+<li *ngFor="let item of heroesNames" class="list-group-item">{{item}}</li>
+
+</ul>
