@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Character } from "../interfaces/characters.interface";
+import { DbzService } from "../servicios/dbz.service";
 
 
 @Component({
@@ -9,25 +10,10 @@ import { Character } from "../interfaces/characters.interface";
 })
 export class MainPageComponent{
 
-  public caracters: Character[] = [{
-    name:"Kriling",
-    power:1000
-  },
-  {
-    name:"Goku",
-    power:9500,
-  },{
-    name:"Vegeta",
-    power:7500,
-  }];
+  // Esto le da acceso a todas las propiedades y métodos de la clase DbzService
+  constructor(public dbzServices:DbzService){
 
-
-  NewCharacter(character:Character):void{
-      this.caracters.push(character);
+    
   }
 
-  onDeleteCharacter(index:number):void{
-    // Elimina desde el índice que le pasamos y solo un elemnto
-    this.caracters.splice(index,1);
-  }
 }
