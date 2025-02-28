@@ -1,0 +1,23 @@
+
+<h4>
+  Agregar Personaje
+</h4>
+<!--  [value]="caracter.name": cuando se pone entre corchetes es para mostrar un valor de una propiedad -->
+  <!-- Los parentesis son para eventos, las llaves cuadradas son para atributos  -->
+
+  <!-- [(ngModel)]: hay q importarlo en su respectivo modulo, en el imput q este se debe poner el atributo name para q angular sepa q esta dentro de un fomulario si no tira error -->
+
+  <!-- (ngSubmit)="emitCaracter()": es un evento para q se envie la informacion del formulario -->
+  <form action="" class="row" (ngSubmit)="emitCaracter()">
+    <input type="text" placeholder="Nombre" class="form-control mb-2" [(ngModel)]="caracter.name"
+    name="name">
+
+    <input type="number" placeholder="Poder" class="form-control mb-2" [(ngModel)]="caracter.power" name="power">
+
+    <button class="btn btn-primary" type="submit">
+      Agregar
+    </button>
+
+    <!-- Esto no lo explico todavia pero nos muestra el valor del objeto colocado -->
+    <!-- {{caracter | json}} -->
+  </form>
