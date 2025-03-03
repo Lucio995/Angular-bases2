@@ -5,12 +5,12 @@
   <div class="col">
 
     <!-- Cuando queremos mandar inputs es decir informacion del parde al hijo, es decir atributos se usan las llaves cuadradas -->
-    <dbz-list [characterList]="dbzServices.caracters" (onDelete)="dbzServices.deletCharacterById($event)"></dbz-list>
+    <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
   </div>
 
 
   <div class="col">
     <!-- Cuando queremos escuchar eventos lo hacemos con parentesis -->
-  <dbz-add-caracter (onNewCharacter)="dbzServices.NewCharacter($event)"></dbz-add-caracter>
+  <dbz-add-caracter (onNewCharacter)="onNewCharacter($event)"></dbz-add-caracter>
   </div>
 </div>

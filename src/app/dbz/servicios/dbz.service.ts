@@ -37,7 +37,7 @@ export class DbzService {
   }
 
   // onDeleteCharacter(index:number):void{
-  //   // Elimina desde el índice que le pasamos y solo un elemnto
+     // Elimina desde el índice que le pasamos y solo un elemnto
   //   this.caracters.splice(index,1);
   // }
 
